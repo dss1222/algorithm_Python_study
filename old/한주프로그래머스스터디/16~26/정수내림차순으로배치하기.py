@@ -1,10 +1,7 @@
 def solution(n):
-    answer = ''
-    array = list(str(n))
-    array.sort(reverse=True)
-    for i in array:
-        answer += str(i)
-    return answer
+    num = sorted(str(n))
+    num.reverse()
+    return num
 
 n = 118372
 print(solution(n))

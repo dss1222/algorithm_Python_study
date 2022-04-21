@@ -1,8 +1,6 @@
-import math
-
 def solution(n):
-    x = math.sqrt(n)
-    if n % x == 0:
+    x = round(n**0.5, 2)
+    if x.is_integer():
         return int((x + 1) * (x + 1))
     else:
         return -1
