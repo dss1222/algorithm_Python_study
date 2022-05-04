@@ -20,7 +20,7 @@ for _ in range(m):
     if c < graph[a][b]:
         graph[a][b] = c
 
-# 점화식에 따라 플로이드 워셜 알고리즘을 수행
+#점화식에 따라 플로이드 워셜 알고리즘을 수행
 for k in range(1, n + 1):
     for a in range(1, n + 1):
         for b in range(1, n + 1):
