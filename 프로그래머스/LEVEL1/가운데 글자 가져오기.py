@@ -1,0 +1,9 @@
+def solution(s):
+    S = list(s)
+    if len(s) % 2 ==0:
+        idx = len(S)//2
+        answer=f'{S[idx-1]}{S[idx]}'
+    else:
+        idx = len(S) // 2
+        answer = S[idx]
+    return answer
