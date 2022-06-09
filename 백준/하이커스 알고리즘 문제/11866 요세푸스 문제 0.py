@@ -10,5 +10,6 @@ while s:
         s.popleft()
     print(s.popleft(), end='')
     if s:
+
         print(', ', end='')
 print('>')
