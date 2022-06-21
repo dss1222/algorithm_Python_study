@@ -8,4 +8,5 @@ def isPalindrome(self, s : str) -> bool:
         if strs.pop(0) != strs.pop():
             return False
 
+
     return True
