@@ -1,10 +1,11 @@
-n = int(input())
-A = set(map(int, input().split()))
-m = int(input())
-arr = list(map(int,input().split()))
+def solution(price, money, count):
+    sum = 0
+    for i in range(1, count+1):
+        sum += price * i
 
-for i in arr:
-    if i in A:
-        print(1)
+    if sum-money <= 0:
+        return 0
     else:
-        print(0)
+        return sum-money
+
+print(solution(3, 32, 4))
